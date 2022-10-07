@@ -1,8 +1,8 @@
-const menuMostrar = document.querySelector(".contenedor__fondo--responsive");
-const menuAbierto = document.querySelector(".icono__menu--responsive");
-const menuCerrar = document.querySelector(".icono__menu--responsive");
+const menuMostrar = document.querySelector(".contenedor__desplegable--mobile");
+const menuAbierto = document.querySelector(".nav__mobile");
+const menuCerrar = document.querySelector(".nav__mobile");
 function toggleMenu() {
-    menuMostrar.classList.toggle("nav__responsive--abierto");
+    menuMostrar.classList.toggle("contenedor__desplegableabierto--mobile");
 };
 menuAbierto.addEventListener("click",  toggleMenu);
 menuCerrar.addEventListener("click",  toggleMenu);

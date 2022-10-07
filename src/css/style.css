@@ -1,0 +1,197 @@
+/**********************
+        MAIN CSS
+
+**********************/
+:root{
+    --lp:1.5rem;
+    --lm: 2rem;
+    --lg: 4rem;
+    --lpo: 1.8rem;
+    --lmo: 2.5rem;
+    --lgo: 6rem;
+    --header: #404040;
+    --footer: #00b1bb;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*****************
+    HEADER MOBILE
+*****************/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: var(--header);
+}
+header .contenedor__logo{
+    width: 150px;
+}
+header .contenedor__logo img{
+    width: 150px;
+}
+.nav__desktop{
+    display: none;
+}
+.contenedor__desplegableabierto--mobile{
+    display: block !important;
+}
+.contenedor__desplegable--mobile{
+    position: absolute;
+    top: 100px;
+    width: 320px;
+    right: 0;
+    background-color: var(--header);
+    border-bottom-left-radius: 50px;
+    display: none;
+    transition: all linear 500ms;
+}
+.contenedor__desplegable--mobile >ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+}
+.contenedor__desplegable--mobile > ul >li{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+.contenedor__desplegable--mobile > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: var(--lm);
+    font-weight: 400;
+}
+.ul__mobile  .links__mobile{
+    color: var(--footer);
+    font-weight: bold;
+    font-size: var(--lm);
+}
+.icono__mobile > span{
+    color: white;
+    font-size: 4rem;
+}
+
+/************************
+        SECCION UNO 
+*************************/
+
+.contenedor__seccionuno{
+    padding: 40px 20px;
+    width: 340px; /** PENDIENTE*/
+}
+.contenedor__texto--seccionuno{
+    color: #404040;
+}
+.contenedor__texto--seccionuno h3, h1{
+    text-transform: uppercase;
+}
+.contenedor__texto--seccionuno h3{
+    padding-bottom: 30px;
+    font-size: var(--lmo);
+    font-weight: 600;
+}
+.contenedor__texto--seccionuno h1{
+    font-size: var(--lgo);
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 0.9;
+}
+.contenedor__texto--seccionuno h1 p:nth-child(2){
+    font-size: var(--lg);
+    font-weight: 400;
+    padding-bottom: 30px ;
+
+}
+.contenedor__parrafo--selecionuno{
+    max-width: 320px;
+}
+.contenedor__texto--seccionuno .parrafo__seleccionuno{
+    font-size: var(--lpo);
+    text-align: left;
+    margin-bottom: 30px;
+}
+.contenedor__imagenes--seccionuno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__imagenes--seccionuno  img{
+    width: 50px;
+}
+.contenedor__imagenes--seccionuno p{
+    font-weight: 600;
+    font-size: var(--lm);
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+.contenedor__secciondos{
+    padding-top: 30px;
+    display: flex;
+    overflow: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 20px;
+}
+.contenedor__secciondos article{
+     gap: 10px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
+    scroll-snap-align: center;
+    object-fit: contain;
+}
+.contenedor__secciondos img{
+    width: 200px;
+    object-fit: contain;
+}
+.contenedor__imagengrande--secciondos{
+    padding-top: 40px;
+}
+.contenedor__imagengrande--secciondos img{
+    width: 300px;
+    border-radius: 8px;
+}
+/**************************
+        FOOTER
+**************************/
+footer{
+    display: flex;
+    align-items: center;
+    background-color:var(--footer);
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+.contenedor__redessociales{
+    display: flex;
+}
+footer p{
+    color: white;
+    font-size: var(--lm);
+    padding: 10px 0;
+}
+footer span{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 5px;
+}
+footer span i{
+    font-size: var(--lm);
+    color: var(--footer);
+}
