@@ -5,10 +5,11 @@
 :root{
     --lp:1.5rem;
     --lm: 2rem;
-    --lg: 4rem;
+    --lg: 5.5rem;
     --lpo: 1.8rem;
     --lmo: 2.5rem;
-    --lgo: 6rem;
+    --lgo: 8rem;
+    --lge: 8rem;
     --header: #404040;
     --footer: #00b1bb;
 }
@@ -89,7 +90,7 @@ header .contenedor__logo img{
 
 .contenedor__seccionuno{
     padding: 40px 20px;
-    width: 340px; /** PENDIENTE*/
+    min-width: 340px; /** PENDIENTE*/
 }
 .contenedor__texto--seccionuno{
     color: #404040;
@@ -115,7 +116,7 @@ header .contenedor__logo img{
 
 }
 .contenedor__parrafo--selecionuno{
-    max-width: 320px;
+    max-width: 350px;
 }
 .contenedor__texto--seccionuno .parrafo__seleccionuno{
     font-size: var(--lpo);
@@ -124,8 +125,8 @@ header .contenedor__logo img{
 }
 .contenedor__imagenes--seccionuno{
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: 340px;
 }
 .contenedor__imagenes--seccionuno  img{
     width: 50px;
@@ -137,6 +138,7 @@ header .contenedor__logo img{
     padding: 0 10px;
 }
 .contenedor__secciondos{
+    width: 100%;
     padding-top: 30px;
     display: flex;
     overflow: scroll;
@@ -151,7 +153,6 @@ header .contenedor__logo img{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
     scroll-snap-align: center;
     object-fit: contain;
 }
@@ -161,9 +162,12 @@ header .contenedor__logo img{
 }
 .contenedor__imagengrande--secciondos{
     padding-top: 40px;
+    display: flex;
+    justify-content: center
 }
 .contenedor__imagengrande--secciondos img{
-    width: 300px;
+    width: 100%;
+    max-width: 500px;
     border-radius: 8px;
 }
 /**************************
@@ -184,6 +188,7 @@ footer p{
     color: white;
     font-size: var(--lm);
     padding: 10px 0;
+    font-weight: 600;
 }
 footer span{
     background-color: white;
