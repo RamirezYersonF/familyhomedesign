@@ -101,11 +101,8 @@ header .contenedor__logo img{
 *************************/
 
 .contenedor__seccionuno{
-    padding: 40px 20px;
+    padding: 40px  0;
     min-width: 340px; /** PENDIENTE*/
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 .contenedor__texto--seccionuno{
     color: #404040;
@@ -214,7 +211,7 @@ footer p{
 footer span{
     background-color: white;
     border-radius: 50%;
-    padding:  15px;
+    padding:  12px;
     margin: 0 5px;
     cursor: pointer;
 }
