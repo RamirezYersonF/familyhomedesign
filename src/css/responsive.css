@@ -43,7 +43,7 @@
         padding-top: 0px;
     }
     .contenedor__imagengrande--secciondos img{
-        width: 700px;
+        width: auto;
         border-radius: 0
     }
     .contenedor__secciondos{
@@ -67,4 +67,3 @@
         width: 100%;
     }
 }
-    
