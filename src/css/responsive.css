@@ -32,7 +32,7 @@
         justify-content: space-between;
     }    
 }
-@media (min-width:1026px){
+@media (min-width:1024px){
     .contenedor__secciondos--plus{
      display: flex;
     }
@@ -58,14 +58,13 @@
     .contenedor__foter, .contenedor__header{
         padding: 0;
     }
-}
-@media(min-width:1100px){
+    .contenedor__seccionuno{
+        padding: 40px 0;
+    }
     .contenedor__desktop--seccionuno, .contenedor__seccionuno{
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
-    .contenedor__seccionuno{
-        padding: 40px 0;
-    }
 }
+    
