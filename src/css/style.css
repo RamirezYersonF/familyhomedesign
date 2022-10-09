@@ -29,12 +29,24 @@ html{
 *****************/
 header{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+  
     width: 100%;
     height: 100px;
     background-color: var(--header);
 }
+.contenedor__header, .contenedor__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+   
+}
+.contenedor__header{
+    padding: 0 20px;
+}
+
 header .contenedor__logo{
     width: 150px;
 }
@@ -74,7 +86,7 @@ header .contenedor__logo img{
     font-size: var(--lm);
     font-weight: 400;
 }
-.ul__mobile  .links__mobile{
+.ul__mobile  .links__mobile,.links__desktop{
     color: var(--footer);
     font-weight: bold;
     font-size: var(--lm);
@@ -91,9 +103,13 @@ header .contenedor__logo img{
 .contenedor__seccionuno{
     padding: 40px 20px;
     min-width: 340px; /** PENDIENTE*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .contenedor__texto--seccionuno{
     color: #404040;
+    padding-bottom: 40px;
 }
 .contenedor__texto--seccionuno h3, h1{
     text-transform: uppercase;
@@ -148,13 +164,11 @@ header .contenedor__logo img{
 }
 .contenedor__secciondos article{
      gap: 10px;
-    object-fit: contain;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: center;
-    object-fit: contain;
 }
 .contenedor__secciondos img{
     width: 200px;
@@ -173,30 +187,41 @@ header .contenedor__logo img{
 /**************************
         FOOTER
 **************************/
+
+
 footer{
+    background-color: var(--footer);
+    width: 100%;
+}
+.contenedor__footer{
     display: flex;
     align-items: center;
-    background-color:var(--footer);
-    justify-content: center;
-    height: 100%;
-    flex-direction: column;
+    flex-wrap: wrap;
+   justify-content: center;
+   max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding:  0 20px;
 }
-.contenedor__redessociales{
-    display: flex;
-}
+
 footer p{
     color: white;
     font-size: var(--lm);
-    padding: 10px 0;
+    padding: 20px 0;
     font-weight: 600;
+
 }
 footer span{
     background-color: white;
     border-radius: 50%;
-    padding: 5px;
+    padding:  15px;
     margin: 0 5px;
+    cursor: pointer;
 }
 footer span i{
     font-size: var(--lm);
     color: var(--footer);
+    position: relative;
+    top: 3px;
+
 }
