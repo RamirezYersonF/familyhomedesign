@@ -66,4 +66,30 @@
         justify-content: space-between;
         width: 100%;
     }
+    main{
+        min-height: 100vh;
+        position: relative;
+    }
+    footer{
+       position: absolute;
+       bottom: 0;
+    }   
+    .contenedor__body{
+        height: 80vh;
+    }
+    
+}
+
+@media(min-width:1280px){
+    main{
+        min-height: 120vh;
+        position: relative;
+    }
+    footer{
+       position: absolute;
+       bottom: 0;
+    }   
+    .contenedor__body{
+        height: 95vh;
+    }
 }
